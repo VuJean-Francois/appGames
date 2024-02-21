@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/appGames/static/css/main.b3853bfc.css",
-    "main.js": "/appGames/static/js/main.6f596f70.js",
+    "main.js": "/appGames/static/js/main.99d7bccd.js",
     "static/js/453.114fd8a8.chunk.js": "/appGames/static/js/453.114fd8a8.chunk.js",
     "service-worker.js": "/appGames/service-worker.js",
     "index.html": "/appGames/index.html",
     "main.b3853bfc.css.map": "/appGames/static/css/main.b3853bfc.css.map",
-    "main.6f596f70.js.map": "/appGames/static/js/main.6f596f70.js.map",
+    "main.99d7bccd.js.map": "/appGames/static/js/main.99d7bccd.js.map",
     "453.114fd8a8.chunk.js.map": "/appGames/static/js/453.114fd8a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3853bfc.css",
-    "static/js/main.6f596f70.js"
+    "static/js/main.99d7bccd.js"
   ]
 }

@@ -70,17 +70,19 @@ const [install, setInstall] = useState(false);
  
   const deferredPrompt = useRef(null);
 
-  useEffect( () => {
-    const handler = (e) =>{
-      e.preventDefault();
-      setInstall(e.prompt);
-    };
-
-    window.addEventListener('beforeinstallprompt', handler);
-    return () => {
-    window.removeEventListener('beforeinstallprompt', handler);
-    };
-  },[]);
+  useEffect(() =>{
+const handler = (e) => {
+e.preventDefault();
+deferredPrompt.current = e;
+// Stocker l'événement dans la propriété .current de la ref
+console.log("Change prompt", deferredPrompt)
+setInstall(true);
+};
+// On place l'eventListener au démarrage
+window.addEventListener('beforeinstallprompt', handler);
+return () =>{
+// On retire l'eventListener à la fermeture
+window.removeEventListener('beforeinstallprompt', handler);};}, []);
 
   const handleInstall = () => {
   deferredPrompt.current.prompt();
