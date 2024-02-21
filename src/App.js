@@ -72,7 +72,7 @@ const [install, setInstall] = useState(false);
 
   useEffect( () => {
     const handler = (e) =>{
-      e.PreventDefault();
+      e.preventDefault();
       setInstall(e.prompt);
     };
 
