@@ -66,7 +66,7 @@ const [install, setInstall] = useState(false);
       path:"/shop",
       element:<MyShop />,
     }
-  ], { basename: "/" })
+  ], { basename: "/appGames" })
  
   const deferredPrompt = useRef(null);
 
